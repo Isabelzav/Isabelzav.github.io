@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/stylenight.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rambla&family=Rancho&family=Roboto:wght@100&family=Sarabun:wght@100&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<title>Title</title>
+<div class="title">
+	<h1>Skincare Routine</h1>
+	<div class="subtitle">
+		<h4>Nighttime</h4>
+	</div>
+</div>
+
+<div class="center">
+	<div id="big-circle">
+		<div class="circle one" id="circle1" onclick="toggleShow('popup-1')">
+			<img src="assets/img/makeupremover2.png">
+		</div>
+		<div class="circle two" id="circle2" onclick="toggleShow('popup-2')">
+			<img src="assets/img/salicylic.png">
+		</div>
+		<div class="circle three" id="circle3" onclick="toggleShow('popup-3')"> 
+			<img src="assets/img/nightserum.png">
+		</div>
+		<div class="circle four" id="circle4" onclick="toggleShow('popup-4')">
+			<img src="assets/img/eyemask.png">
+		</div>
+		<div class="circle five" id="circle5" onclick="toggleShow('popup-5')">
+			<img src="assets/img/nightcream.png">
+		</div>
+		<div class="circle six" id="circle6" onclick="toggleShow('popup-6')">
+			<img src="assets/img/nightacne.png">
+		</div>
+		
+		<div id="smaller-circle">
+			<img src="assets/img/skincare3.png" height=375px width=375px>
+		</div>
+	</div>
+</div>
+
+<div class="popup" id="popup-1">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-1')">&times;</div>
+		<h1> Step 1: Makeup Remover</h1>
+		<h4> The night is young but your makeup ain't no more! It has seen the light of day and your skin is begging for a break! 
+			<br> 
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Greenzla-Reusable-Remover-Washable-Laundry/dp/B07T8BVYGS/ref=sr_1_1_sspa?crid=2XJIA1UNILHSW&keywords=reusable+makeup+remover+pads&qid=1638337379&s=beauty&sprefix=reusable+%2Cbeauty%2C219&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFEWlJDRzJGRUFMSFEmZW5jcnlwdGVkSWQ9QTA0MzAwNTIyRExPR0RaR1lCNzBRJmVuY3J5cHRlZEFkSWQ9QTA4NTA5NTMxTUVFT0lEVkcyVE9PJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=='>Reusable pads</a> and <a href='https://www.amazon.com/Garnier-SkinActive-Micellar-Cleansing-Water/dp/B01MQ495N0/ref=sxts_rp_s1_0?cv_ct_cx=micellar+water&keywords=micellar+water&pd_rd_i=B01MQ495N0&pd_rd_r=115a7e21-5121-425e-8b9c-1eade41947e5&pd_rd_w=noWAg&pd_rd_wg=LcDom&pf_rd_p=29dcfc78-5030-4047-b3bb-fd095cf7aa8a&pf_rd_r=VBKH2FE1FNHQMQZW3WEK&psc=1&qid=1638336378&sr=1-1-f0029781-b79b-4b60-9cb0-eeda4dea34d6'>Garnier Micellar Water</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-2">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-2')">&times;</div>
+		<h1> Step 2: Cleanse with Salicylic Acid</h1>
+		<h4> Time to get rid of those clogged pores! Can you imagine how many times you touch your face throughout the day? This step is essential! 
+			<br> 
+			<br>
+			Recommendation: <a href='https://www.amazon.com/CeraVe-Salicylic-Cleanser-Exfoliating-Fragrance/dp/B00U1YCRD8/ref=sr_1_5?crid=231BDJ66HL9TM&keywords=create+salicylic+acid+cleanser&qid=1638337455&qsid=133-9876187-5117656&s=beauty&sprefix=create+sal%2Cbeauty%2C202&sr=1-5&sres=B00U1YCRD8%2CB077TWXCQV%2CB097WMCYYJ%2CB00949CTQQ%2CB07RJ18VMF%2CB07YLJPMC3%2CB00LO1DNXU%2CB01MSSDEPK%2CB097WFJ5H2%2CB07VWSN95S%2CB07L1PHSY9%2CB002ECVMWM%2CB07K3261ZD%2CB08CQDF382%2CB01N7T7JKJ%2CB078H8FLHH%2CB07GC74LL5%2CB075N8CDGT%2CB00VMYKCL0%2CB06XW6GCD6&srpt=SKIN_CLEANING_AGENT'>CeraVe Renewing SA Cleanser</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-3">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-3')">&times;</div>
+		<h1> Step 3: Apply Serum</h1>
+		<h4> Your skin is screaming for some hydration and brightness. Don't wanna look all dark and gloomy in the morning!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/ToLB-Anti-Aging-Serum-Combo/dp/B014PGEEO2/ref=sr_1_4_sspa?keywords=serum&qid=1638337516&s=beauty&sr=1-4-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExNkFHNVJNWDNYU01BJmVuY3J5cHRlZElkPUEwODg1MzU4WTJDNzVVOUNITFNBJmVuY3J5cHRlZEFkSWQ9QTA4ODA3NTQ4UkFXUUZDTEkxUTImd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl'>Tree of Life Vitamin C Serum</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-4">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-4')">&times;</div>
+		<h1> Step 4: Use an Eye Mask</h1>
+		<h4> Your eyes have seen enough today. Get rid of those dark eyebags asap! How many cups of coffee did you have?
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Dermora-Gold-Eye-Mask-V2/dp/B07N93XF4Z/ref=sr_1_5?keywords=underage+mask&qid=1638337597&qsid=133-9876187-5117656&s=beauty&sr=1-5&sres=B07N93XF4Z%2CB07KGMWBHM%2CB01DZ7C502%2CB08LNV59SR%2CB07M7KQGS9%2CB08HMSFVSX%2CB07KJVVWL1%2CB07RLSW2BY%2CB074V8ZSW4%2CB07WYVT74T%2CB089RJQ8M3%2CB0821FHRR9%2CB00CTQ0EUY%2CB0722LVW3B%2CB01NCM25K7%2CB07FNVWJFN%2CB07KPRQZC8%2CB082Y6B9SQ%2CB08HYXYBBC%2CB00BAM7F8C&srpt=SKIN_TREATMENT_MASK'>24K Gold Eye Mask</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-5">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-5')">&times;</div>
+		<h1> Step 5: Moisturize</h1>
+		<h4> Don't wanna have any cracks in that beautiful face now, do we? Goodbye flaky skin!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Laneige-Water-Sleeping-Mask-Ounce/dp/B00Y16CXS6/ref=sr_1_2?crid=1BXI3PYFOP51K&keywords=lineage+sleeping+mask&qid=1638337676&qsid=133-9876187-5117656&s=beauty&sprefix=lineage+sleep%2Cbeauty%2C198&sr=1-2&sres=B00Y16CXS6%2CB07XFLXW3S%2CB07SDL65KC%2CB06XR7C2Y2%2CB07XXPHQZK%2CB01MR552ZR%2CB08Y7YKMTB%2CB018AYHZX2%2CB06XVZM3G9%2CB085LN463M%2CB07S2FXGK5%2CB078RKMPZR%2CB0819X2VQ2%2CB07DY2QRF6%2CB072BHZ41J%2CB01M4MCUAF%2CB07G2XT92T%2CB079NFZM56%2CB09HN5CMBX%2CB07GCGFLX8'>Laneige Water Sleeping Mask</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-6">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-6')">&times;</div>
+		<h1> Step 6: Apply Acne Cream</h1>
+		<h4> Gotta zap any of those pimples that still haven't disappeared. You want to sleep in peace!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Clean-Clear-Advantage-Treatment-Medication/dp/B00027DDOQ/ref=sr_1_5?crid=CJXBGYXYV85H&keywords=clean+and+clear+acne+spot+treatment&qid=1638337729&qsid=133-9876187-5117656&s=beauty&sprefix=clean+and+clear+acn%2Cbeauty%2C217&sr=1-5&sres=B00027DDOQ%2CB001E96LXQ%2CB00402C7D2%2CB08B9B1BKZ%2CB00RPP3XCK%2CB01IA979T2%2CB01MA63SWW%2CB001E96LRC%2CB003LZWVPS%2CB086HSSJVD%2CB08SS8K692%2CB00NR1YVYU%2CB00J2V6XWC%2CB00NNM05HA%2CB001E96LVS%2CB003BQLAQS%2CB075K9TTSK%2CB07L1PHSY9%2CB00JF2W6EM%2CB000052YJM'>Clean & Clear Acne Spot Treatment</a>
+		</h4>
+	</div>
+</div>
+
+<label class="switch" onclick="switchToDay()">
+	<input type="checkbox">
+	<span class="slider round"></span>
+  </label>
+
+<script src="assets/script/script.js"></script>
+</body>
+</html>

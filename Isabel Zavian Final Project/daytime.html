@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rambla&family=Rancho&family=Roboto:wght@100&family=Sarabun:wght@100&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<title>Title</title>
+<div class="title">
+	<h1>Skincare Routine</h1>
+	<div class="subtitle">
+		<h4>Daytime</h4>
+	</div>
+</div>
+
+<div class="center">
+	<div id="big-circle">
+		<div class="circle one" id="circle1" onclick="toggleShow('popup-1')">
+			<img src="assets/img/wash.png">
+		</div>
+		<div class="circle two" id="circle2" onclick="toggleShow('popup-2')">
+			<img src="assets/img/toner2.png">
+		</div>
+		<div class="circle three" id="circle3" onclick="toggleShow('popup-3')"> 
+			<img src="assets/img/facewash2.png">
+		</div>
+		<div class="circle four" id="circle4" onclick="toggleShow('popup-4')">
+			<img src="assets/img/sunscreen2.png">
+		</div>
+		<div class="circle five" id="circle5" onclick="toggleShow('popup-5')">
+			<img src="assets/img/moisturizer2.png">
+		</div>
+		<div class="circle six" id="circle6" onclick="toggleShow('popup-6')">
+			<img src="assets/img/acnecream2.png">
+		</div>
+		
+		<div id="smaller-circle">
+			<img src="assets/img/skincare3.png" height=375px width=375px>
+		</div>
+	</div>
+</div>
+
+<!-- <div class="diamonds">
+	<div id="stars">
+		<div class="star starone" id="star1">
+			<img src="assets/img/stars.png" height=90px width=90px>
+		</div>
+		<div class="star startwo" id="star2">
+			<img src="assets/img/stars.png" height=90px width=90px>
+		</div>
+	</div>
+</div> -->
+
+<div class="popup" id="popup-1">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-1')">&times;</div>
+		<h1> Step 1: Wash Your Face</h1>
+		<h4> Good morning! Wake yourself up with a splash of ice cold water in your face. Who needs an alarm clock anyways? </h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-2">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-2')">&times;</div>
+		<h1> Step 2: Apply Toner</h1>
+		<h4> Let's tone some of that redness down immediately. Don't want to be compared to a tomato today!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Thayers-Alcohol-Free-Petal-Formula-12-Facial/dp/B007HD570Q/ref=sr_1_6_0b_wf_mod_primary_alm?keywords=good+toner&qid=1638337896&qsid=133-9876187-5117656&s=beauty&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sr=1-6&sres=B001SB9CL8%2CB007HD570Q%2CB08TMKKM8Q%2CB08C2BLPD2%2CB07DSGWC5D%2CB08R9TK75L%2CB00854I1YK%2CB01G7OBURE%2CB003SSTOYE%2CB07XY9VWJB%2CB008EPPIQ4%2CB092HPLRCB%2CB000U5O650%2CB08FCRW4ZD%2CB000GCQ04C%2CB00NLKAVL4%2CB0776MB22N%2CB07BYJF7L7%2CB07GWBYQG6%2CB07K23HV61&srpt=ASTRINGENT_SUBSTANCE'>THAYERS Witch Hazel Toner</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-3">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-3')">&times;</div>
+		<h1> Step 3: Cleanse with Benzoyl Peroxide</h1>
+		<h4> Time to fight off those clogged pores! Can you imagine how many times you touch your face throughout the day? This step is essential!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/PanOxyl-Foaming-Peroxide-Strength-Antimicrobial/dp/B081KL2QYJ/ref=sr_1_5?crid=3F5F7DZML1X4I&keywords=panoxyl%2B10%2Bpercent%2Bbenzoyl%2Bperoxide&qid=1638337955&qsid=133-9876187-5117656&s=beauty&sprefix=panoply%2Cbeauty%2C264&sr=1-5&sres=B081KL2QYJ%2CB092MXQRGD%2CB01094ZEE8%2CB0147TRJJE%2CB00H3R7WCM%2CB008VVWUEE%2CB01BBM64Q4%2CB00BD1BXJM%2CB015V7MA18%2CB091YSS1G2%2CB00TKM92HG%2CB08D4MH7XQ%2CB00PO7GKLM%2CB011FD9Q00%2CB002NKMGA2%2CB07799WY99%2CB00L4E4G10%2CB01IAEEBS4%2CB00AWROF2A%2CB01IADYYCI&srpt=SKIN_CLEANING_AGENT&th=1'>PanOxyl Acne Foaming Wash</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-4">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-4')">&times;</div>
+		<h1> Step 4: Apply Sunscreen</h1>
+		<h4> You better protect your face from the sun! The sun can really age your skin like a raisin.
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Neutrogena-Sunscreen-Acne-Prone-Spectrum-Fragrance-Free/dp/B004D2826K/ref=sr_1_2_mod_primary_new?keywords=neutrogena+acne+sunscreen&qid=1638338005&qsid=133-9876187-5117656&rdc=1&s=beauty&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-2&sres=B004D2826K%2CB00BZABKPS%2CB08MFNJ8LF%2CB003XUROHQ%2CB001P97U6C%2CB000052YP1%2CB000052YOL%2CB004D281CK%2CB0037LOQQI%2CB00NR1YQKO%2CB001P92FMG%2CB004D2DR0Q%2CB000EPA4GQ%2CB003BMGAUI%2CB00AEN4QZ8%2CB00NR1YVYU%2CB07YP68WXR%2CB084K5HNCC%2CB00005K9CK%2CB003156NH0&srpt=SUNSCREEN'>Neutrogena Clear Face Sunscreen</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-5">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-5')">&times;</div>
+		<h1> Step 5: Moisturize</h1>
+		<h4> Don't wanna have any cracks in that beautiful face now, do we? Goodbye flaky skin! 
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/CeraVe-Moisturizing-Cream-Daily-Moisturizer/dp/B00TTD9BRC/ref=sr_1_2?crid=31WM26GNROXF4&keywords=cerave+moisturizing+cream&qid=1638338042&qsid=133-9876187-5117656&s=beauty&sprefix=cerave+%2Cbeauty%2C934&sr=1-2&sres=B00TTD9BRC%2CB00365DABC%2CB00D7BZNT2%2CB07Y92G633%2CB075N8392D%2CB00F97FHAW%2CB013GDK3SQ%2CB01N35TNYX%2CB07YLJ2X55%2CB07HRG7FYW%2CB00RY3N328%2CB00STUZA0I%2CB07P127VP7%2CB01IAGS9T4%2CB00FZRUIXC%2CB01IAGSBHE%2CB07SRHKJC5%2CB00B1VE9F4%2CB01BW3YD8S%2CB00SNPCSUY&srpt=SKIN_MOISTURIZER'>CeraVe Moisturizing Cream</a>
+		</h4>
+	</div>
+</div>
+
+<div class="popup" id="popup-6">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close" onclick="toggleShow('popup-6')">&times;</div>
+		<h1> Step 6: Apply Acne Cream</h1>
+		<h4> Gotta zap any of those pimples that are trying to get in your way. Your skin isn't free real estate!
+			<br>
+			<br>
+			Recommendation: <a href='https://www.amazon.com/Neutrogena-Stubborn-Treatment-Maximum-Strength-Acne-Prone/dp/B00NR1YVYU/ref=sr_1_6?keywords=acne+spot&qid=1638338106&qsid=133-9876187-5117656&rdc=1&s=beauty&sr=1-6&sres=B074PVTPBW%2CB00NR1YVYU%2CB00027DDOQ%2CB0014VTOAQ%2CB07B4KQVK6%2CB01DOIRH4G%2CB075QNC39Q%2CB07L1PHSY9%2CB07DP9MCCJ%2CB07KGCW56F%2CB07FPT52DY%2CB06XDTLQ1Y%2CB00E4MPE4C%2CB08D6RPQ74%2CB006YQ7Z3E%2CB07G1VKCND%2CB0179IBBEE%2CB084CVZH4W%2CB0822ZT62Z%2CB07P6FTZMN'>Neutrogena Stubborn Acne Treatment</a>
+		</h4>
+	</div>
+</div>
+
+<label class="switch" onclick="switchToNight()">
+	<input type="checkbox">
+	<span class="slider round"></span>
+  </label>
+
+
+<!-- <div class="diamonds" id="stars">
+	<img src="assets/img/stars.png" height=90px width=90px>
+</div> -->
+
+<script src="assets/script/script.js"></script>
+</body>
+</html>
